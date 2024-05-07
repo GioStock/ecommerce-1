@@ -1,4 +1,17 @@
+/* -------------------------------------------------------------------------- */
+/*                                  variabili                                 */
+/* -------------------------------------------------------------------------- */
+:root{
+        --text: #292424;
+        --background: #fbfbfe;
+        --primary: #FF3D00;
+        --secondary: #e98f8f;
+        --accent: #eb5151;
+
+}
+
 body{
+    
     font-family: "Noto-Sans",'Times New Roman', Times, serif;
 }
 /* elemento che si crea quando si carica la pagina  anche il .card sotto e di swiper.js*/
@@ -7,15 +20,48 @@ body{
     display: none;
 
 }
+/* -------------------------------------------------------------------------- */
+/*                             modifiche alla hero                            */
+/* -------------------------------------------------------------------------- */
+
+h1{
+    color: var(--accent) !important;
+}
+
+/* todo: impostate i button a variabile accent */
+
+body button{
+    background: var(--accent) !important;
+
+}
+#secondNavbar{
+    padding-bottom: 100%;
+}
+
+#header1{
+    background: var(--accent) !important;
+}
+
+#searchButton, #btnLogout, #loginProva{
+    margin: 5px;
+    padding-right: 15px;
+    transition: .5s;
+}
+button:hover{
+    transition: .5s !important;
+    background: var(--primary)!important;
+    color: var(--background) !important;
+}
+
 
 .alertWishlist{
     position: fixed;
     bottom: 1.5rem;
     right: 1.5rem;
     margin-bottom: 0;
-
-
 }
+
+    
 
 
 .swiper{

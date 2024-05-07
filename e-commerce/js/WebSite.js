@@ -26,15 +26,40 @@ function telefoni(telefono) {
                       <p class="card-text" id="card-text">${prodotto.description}</p>
                       <p class="card-price" id="card-price">${prodotto.price}€</p>
                       <button class="aggiungi-carrello btn  btn-dark btn-outline-light" data-id="${prodotto.id}">Aggiungi al carrello</button>
-                      <a class="AggiungiADesideri" role="button">
-                         <i class="bi bi-heart"></i>
-                         </a>
+                      <div class="animate__animated" id="heartAnimazione"><a class="AggiungiADesideri" role="button"><i class="bi bi-heart" style="color:black" aria-hidden="true"></i></a></div>
+
                   </div>
               </div>
           </div>
         `;
         cardProdotto.innerHTML += card;
       });
+      /* -------------------------------------------------------------------------- */
+      /*                          ANIMAZIONE LISTA FAVORITI                         */
+      /* -------------------------------------------------------------------------- */
+      document.querySelectorAll(".animate__animated").forEach((heart) => {
+        let isRed = false; // Variabile per memorizzare lo stato del colore
+
+        heart.addEventListener("click", function () {
+          // Aggiungi la classe animate__bounce quando viene cliccato
+          this.classList.add("animate__bounce");
+
+          // Cambia il colore dell'icona (il cuore) in base allo stato attuale
+          if (isRed) {
+            this.querySelector("i").style.color = "black"; // Se è rosso, torna nero
+            isRed = false; // Imposta lo stato a nero
+          } else {
+            this.querySelector("i").style.color = "red"; // Se è nero, diventa rosso
+            isRed = true; // Imposta lo stato a rosso
+          }
+
+          // Rimuovi la classe dopo un certo periodo di tempo per consentire la ripetizione dell'animazione
+          setTimeout(() => {
+            this.classList.remove("animate__bounce");
+          }, 1000); // Rimuovi dopo 1000 millisecondi (1 secondo), puoi modificare questo valore in base alle tue esigenze
+        });
+      });
+
 
       // Aggiungi event listener per "Aggiungi al carrello" su tutti i bottoni
       document.querySelectorAll(".aggiungi-carrello").forEach((btn) => {
@@ -46,9 +71,9 @@ function telefoni(telefono) {
         });
       });
       // whislist
-      document.querySelectorAll('.AggiungiADesideri').forEach(iconaCuore => {
-        iconaCuore.addEventListener('click', funzioneAggiungiADesideri);
-      })
+      document.querySelectorAll(".AggiungiADesideri").forEach((iconaCuore) => {
+        iconaCuore.addEventListener("click", funzioneAggiungiADesideri);
+      });
     });
 }
 // aggiungi al cuore

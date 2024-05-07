@@ -12,12 +12,14 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
         integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./css/AmeX.css">
-    <!-- fontfamily -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+        <link rel="stylesheet" href="./css/AmeX.css">
+        <!-- fontfamily -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
+        <link
+    rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 
 </head>
 
@@ -152,27 +154,23 @@
         <div id="divOFFERTA" class="hero-wrapper position-relative">
             <img id="cuffieIMG" src="img/cuffie.jpg" class="img-fluid" alt="">
 
-            <div class="cta position-absolute top-50 start-0 z-1 ms-3 " id="logoutDiv">
+            <div class="cta position-absolute top-50 start-0 z-1 ms-3 bg-danger bg-opacity-25" id="logoutDiv">
                 <h1 id="welcome" class="text-dark"></h1><br>
                 <h2> Cuffie X - Offerta Solo Per OGGI</h2>
                 <p class="textPiccolo">Offerta Solo Per OGGI!</p>
                 <div class="prezzo d-flex justify-content-end cta position-relative z-1 fs-3">499.99$</div>
                 <button id="btnShop" class="btn btn-dark btn-outline-light fs-3">Shop NOW</button>
-
-
-
             </div>
+
             <div class="cta position-absolute top-50 start-100 z-1 ms-3" id="divPROMO">
-                <h1 id="promoMILO" class="text-dark"
-                    style="font-size: 2rem; color: #ff8800; text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);">Codice Promo:
-                    MILO</h1>
-                <p id="promoMilo2" style="font-size: 1.2rem; color: #555; font-style: italic;">per un ulteriore <span
+                <h1 id="promoMILO">PROMO CODE:<div class="bg-danger text-white bg-opacity-75 position-relative">MILO</div></h1>
+                <p id="promoMilo2" class="position-relative" style="font-size: 1.2rem; color: #555; font-style: italic;">per un ulteriore <span
                         style="color: #ff8800;">10%</span></p>
                         <div class="dropdown">
                             <button class="btn btn-dark dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 <i class="bi bi-search"></i> Trova Prodotto
                             </button>
-                            <ul class="dropdown-menu dropdown-menu-dark">
+                            <ul class="dropdown-menu dropdown-menu">
                                 <li id="smartphones">
                                     <button class="dropdown-item" type="button"><i class="bi bi-phone"></i> smartphones</button>
                                 </li>
@@ -206,7 +204,8 @@
 
 
     </section>
-
+    <h1 class="text-center bg-danger bg-opacity-25 mt-lg-0 fs-0">Ultimi Articoli Disponibili!</h1>
+<hr>
 
 
     <section id="carousel">
@@ -215,8 +214,8 @@
                 <!-- elenco slide -->
             </div>
             <div class="swiper-pagination"></div>
-            <div id="prev" class="swiper-button-prev"></div>
-            <div id="next" class="swiper-button-next"></div>
+            <div id="prev" class="swiper-button-prev text-danger fs-3"></div>
+            <div id="next" class="swiper-button-next text-danger fs-3"></div>
             <div class="swiper-scrollbar"></div>
         </div>
     </section>
