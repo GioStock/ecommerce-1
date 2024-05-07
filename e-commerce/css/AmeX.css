@@ -1,0 +1,252 @@
+body{
+    font-family: "Noto-Sans",'Times New Roman', Times, serif;
+}
+/* elemento che si crea quando si carica la pagina  anche il .card sotto e di swiper.js*/
+.swiper-pagination{
+    background: rgb(27, 27, 27); 
+    display: none;
+
+}
+
+.alertWishlist{
+    position: fixed;
+    bottom: 1.5rem;
+    right: 1.5rem;
+    margin-bottom: 0;
+
+
+}
+
+
+.swiper{
+    margin: 0 1rem 0 1rem;
+}
+.card{
+    border: none;
+   width: 100%;
+   height: 100%;
+    
+}
+.swiper-slide{
+    /* margin-right: 1rem!important; */
+   
+}
+/* brutto ma funzionale */
+#card-img{
+    width: 300px;
+    height: 250px;
+    margin-left: 1rem;
+
+}
+#card-text{
+    height: 90px;
+    overflow: hidden; 
+    /* cosi nascondo se il testo esce */
+}
+.card-title{
+    height: 30px;
+    overflow: hidden;
+}
+#prev, #next{
+    color: rgba(10, 10, 10, 0.897);
+    
+}
+.container1 {
+    width: 100%;
+    max-width: 1200px; /* larghezza massima del contenitore */
+    margin: 0 auto; /* per centrare il contenitore */
+    overflow: hidden; /* per far sì che il contenitore contenga i suoi figli con float */
+}
+
+#cuffieIMG {
+    float: right; /* posiziona il div a destra */
+    width: 100%; /* larghezza desiderata per il div */
+    margin-bottom: 5rem;
+}
+
+#divPROMO{
+width: 300px;
+
+}
+#cuffieIMG img {
+    max-width: 100%; /* assicura che l'immagine sia responsiva */
+    height: auto;
+}
+
+#divOFFERTA {
+    float: left; /* permette al contenuto di fluttuare a sinistra rispetto all'imginfo */
+    width: 70%; /* larghezza del contenuto */
+}
+
+@media (max-width: 768px) {
+    .container1 {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 4rem;
+    }
+    #divOFFERTA{
+        margin-bottom: 1rem;
+    }
+    .prezzo{
+        justify-content: start!important;
+        margin-bottom: 2px;
+    }
+
+    #cuffieIMG, #divOFFERTA {
+        width: 100%; /* occupa l'intera larghezza al di sotto di 768px */
+        float: none; /* resetta il float */
+        
+    }
+    #header1{
+        display: none!important;
+    }
+}
+.swiper-scrollbar{
+    display: none;
+}
+
+.swiper-slide{
+    /* width: 400px!important; */
+    /* prima era 395 tipo nn mi ricordo mi disp */
+    border-left: solid 1px rgba(64, 61, 61, 0.235);
+
+}
+.swiper{
+    /* margin: 0 2rem 0 2rem; */
+}
+button{
+    background-color: #fff;
+}
+#hero::after{
+
+    content: '';
+    display: block;
+    
+    
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* absolute ha bisogno di coordinate */
+
+    width: 100%;
+    max-height: max-content;
+    background: rgb(2, 0, 36);
+        background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(251, 251, 255, 0.542454481792717) 55%, rgba(0, 212, 255, 1) 100%);
+
+}
+
+#secondNavbar{
+    border-top: solid 2px whitesmoke;
+    padding: 0 !important;
+}
+.nav-link{
+    color: aliceblue;
+}
+
+#cardPro{
+    width: 50%;
+    height: auto;
+}
+
+
+#logoutDiv{
+    background-color: #ffffff65;
+    margin: 4rem;
+    padding: 1rem;
+    border-radius: 10px;
+}
+h1{
+    font-size: 2rem;
+}
+
+/* #flash{
+    margin: 0 20rem 0 0;
+
+
+} */
+
+
+
+
+
+@media (max-width: 766px) {
+    .scrollingText{
+        display: none;
+    }
+   
+   
+}
+#promoMILO, #promoMilo2{
+    display: none;
+}
+
+
+@media (min-width: 768px) {
+    .scrollingText{
+            font-size: 1rem;
+        }
+    
+       
+    }
+    @media (min-width: 980px) {
+         #promoMILO, #promoMilo2{
+            display: block;
+        }
+    }
+
+
+@media (max-width: 992px) {
+    #cuffieIMG{
+        margin-top: 4rem;
+    }
+}
+
+
+@media (min-width: 992px) {
+   
+    .navBar {
+            overflow: hidden;
+        }
+    
+        .scrollingText {
+            white-space: nowrap;
+            animation: scrollText 5s infinite;
+            /* Evita il wrapping del testo su più righe */
+    
+            /* Animazione di scorrimento del testo */
+        }
+    
+        /* Animazione CSS per lo scorrimento del testo */
+        @keyframes scrollText {
+            from {
+                transform: translateX(80%);
+            }
+    
+            /* Partenza dal bordo destro */
+            to {
+                transform: translateX(-80%);
+            }
+    
+            /* Arrivo al bordo sinistro */
+        }
+}
+
+
+@media (max-width: 1200px) {
+    #logoutDiv h1,h2{
+        display: none;
+    }
+    #cuffieIMG{
+        margin-top: 2rem;
+    }
+
+    
+        
+}
+
+
+@media (min-width: 1201px) {
+    .textPiccolo{
+        display: none;
+    }
+}

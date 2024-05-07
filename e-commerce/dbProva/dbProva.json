@@ -1,0 +1,169 @@
+{
+  "utenti": [
+    {
+      "id": "53e6",
+      "utente": {
+        "username": "simone123",
+        "password": "Flauto!sd2",
+        "carrello": []
+      }
+    },
+    {
+      "id": "07b6",
+      "utente": {
+        "username": "simone",
+        "password": "!flauto124",
+        "carrello": []
+      }
+    },
+    {
+      "id": "5a3b",
+      "utente": {
+        "username": "simone",
+        "password": "Flauto124323!!",
+        "carrello": []
+      }
+    },
+    {
+      "id": "13ac",
+      "utente": {
+        "username": "simone",
+        "password": "!porcoD234",
+        "carrello": []
+      }
+    },
+    {
+      "id": "d8f3",
+      "utente": {
+        "username": "simone",
+        "password": "difoa123!",
+        "carrello": []
+      }
+    },
+    {
+      "id": "02de",
+      "utente": {
+        "username": "simone",
+        "password": "zeepakadd!23",
+        "carrello": []
+      }
+    },
+    {
+      "id": "ee12",
+      "utente": {
+        "username": "porcone",
+        "password": "!asdffsd234",
+        "carrello": []
+      }
+    },
+    {
+      "id": "6b18",
+      "utente": {
+        "username": "233243243",
+        "password": "dioelisddaf!!!12s",
+        "carrello": []
+      }
+    },
+    {
+      "id": "4b87",
+      "utente": {
+        "carrello": [
+          {
+            "id": 3,
+            "title": "Samsung Universe 9",
+            "description": "Samsung's new variant which goes beyond Galaxy to the Universe",
+            "price": 1249,
+            "discountPercentage": 15.46,
+            "rating": 4.09,
+            "stock": 36,
+            "brand": "Samsung",
+            "category": "smartphones",
+            "thumbnail": "https://cdn.dummyjson.com/product-images/3/thumbnail.jpg",
+            "images": [
+              "https://cdn.dummyjson.com/product-images/3/1.jpg"
+            ]
+          },
+          {
+            "id": 2,
+            "title": "iPhone X",
+            "description": "SIM-Free, Model A19211 6.5-inch Super Retina HD display with OLED technology A12 Bionic chip with ...",
+            "price": 899,
+            "discountPercentage": 17.94,
+            "rating": 4.44,
+            "stock": 34,
+            "brand": "Apple",
+            "category": "smartphones",
+            "thumbnail": "https://cdn.dummyjson.com/product-images/2/thumbnail.jpg",
+            "images": [
+              "https://cdn.dummyjson.com/product-images/2/1.jpg",
+              "https://cdn.dummyjson.com/product-images/2/2.jpg",
+              "https://cdn.dummyjson.com/product-images/2/3.jpg",
+              "https://cdn.dummyjson.com/product-images/2/thumbnail.jpg"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "9f94",
+      "utente": {
+        "username": "simeone",
+        "password": "!sdsftrt123",
+        "carrello": [
+          {
+            "id": 3,
+            "title": "Samsung Universe 9",
+            "description": "Samsung's new variant which goes beyond Galaxy to the Universe",
+            "price": 1249,
+            "discountPercentage": 15.46,
+            "rating": 4.09,
+            "stock": 36,
+            "brand": "Samsung",
+            "category": "smartphones",
+            "thumbnail": "https://cdn.dummyjson.com/product-images/3/thumbnail.jpg",
+            "images": [
+              "https://cdn.dummyjson.com/product-images/3/1.jpg"
+            ]
+          },
+          {
+            "id": 2,
+            "title": "iPhone X",
+            "description": "SIM-Free, Model A19211 6.5-inch Super Retina HD display with OLED technology A12 Bionic chip with ...",
+            "price": 899,
+            "discountPercentage": 17.94,
+            "rating": 4.44,
+            "stock": 34,
+            "brand": "Apple",
+            "category": "smartphones",
+            "thumbnail": "https://cdn.dummyjson.com/product-images/2/thumbnail.jpg",
+            "images": [
+              "https://cdn.dummyjson.com/product-images/2/1.jpg",
+              "https://cdn.dummyjson.com/product-images/2/2.jpg",
+              "https://cdn.dummyjson.com/product-images/2/3.jpg",
+              "https://cdn.dummyjson.com/product-images/2/thumbnail.jpg"
+            ]
+          },
+          {
+            "id": 1,
+            "title": "iPhone 9",
+            "description": "An apple mobile which is nothing like apple",
+            "price": 549,
+            "discountPercentage": 12.96,
+            "rating": 4.69,
+            "stock": 94,
+            "brand": "Apple",
+            "category": "smartphones",
+            "thumbnail": "https://cdn.dummyjson.com/product-images/1/thumbnail.jpg",
+            "images": [
+              "https://cdn.dummyjson.com/product-images/1/1.jpg",
+              "https://cdn.dummyjson.com/product-images/1/2.jpg",
+              "https://cdn.dummyjson.com/product-images/1/3.jpg",
+              "https://cdn.dummyjson.com/product-images/1/4.jpg",
+              "https://cdn.dummyjson.com/product-images/1/thumbnail.jpg"
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}
