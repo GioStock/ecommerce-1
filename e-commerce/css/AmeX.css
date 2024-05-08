@@ -23,7 +23,18 @@ body{
 /* -------------------------------------------------------------------------- */
 /*                             modifiche alla hero                            */
 /* -------------------------------------------------------------------------- */
+#hero ul li a{
 
+    /* background: #eb5151 !important; */
+    color: var(--text) !important;
+
+}
+#hero ul li a:hover{
+
+    background: #b49e9e !important;
+    color: var(--accent) !important;
+
+}
 h1{
     color: var(--accent) !important;
 }
@@ -77,10 +88,11 @@ button:hover{
     /* margin-right: 1rem!important; */
    
 }
+
 /* brutto ma funzionale */
 #card-img{
-    width: 300px;
-    height: 250px;
+    max-width: 80%;
+    height: 180px;
     margin-left: 1rem;
 
 }
