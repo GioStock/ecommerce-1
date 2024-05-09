@@ -168,7 +168,8 @@ function funzione() {
   }
 }
 loginProva.addEventListener("click", function () {
-  window.location.href = href="http://127.0.0.1:5500/index.html";
+  window.location.href = "/e-commerce/index.html";
+
 });
 
 funzione();
