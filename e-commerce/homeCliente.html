@@ -7,246 +7,401 @@
   <meta name="description" content="">
   <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
   <meta name="generator" content="Hugo 0.72.0">
-  <title>Dashboard Template · Bootstrap</title>
+  <title>Home - Cliente</title>
 
   <link rel="canonical" href="https://v5.getbootstrap.com/docs/5.0/examples/dashboard/">
 
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+  <!-- MDB -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.2.0/mdb.min.css" rel="stylesheet" />
 
 
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
-    integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-    crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
-    integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/"
-    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="./css/AmeX.css">
 
-  <style>
-    .bd-placeholder-img {
-      font-size: 1.125rem;
-      text-anchor: middle;
-      -webkit-user-select: none;
-      -moz-user-select: none;
-      -ms-user-select: none;
-      user-select: none;
-    }
-
-    @media (min-width: 768px) {
-      .bd-placeholder-img-lg {
-        font-size: 3.5rem;
-      }
-    }
-
-    body {
-      font-size: .875rem;
-    }
-
-    .feather {
-      width: 16px;
-      height: 16px;
-      vertical-align: text-bottom;
-    }
-
-    /* Sidebar*/
-
-    .sidebar {
-      position: fixed;
-      top: 0;
-      bottom: 0;
-      left: 0;
-      z-index: 100;
-      /* Behind the navbar */
-      padding: 48px 0 0;
-      /* Height of navbar */
-      box-shadow: inset -1px 0 0 rgba(0, 0, 0, .1);
-    }
-
-    @media (max-width: 767.98px) {
-      .sidebar {
-        top: 5rem;
-      }
-    }
-
-    .sidebar-sticky {
-      position: relative;
-      top: 0;
-      height: calc(100vh - 48px);
-      padding-top: .5rem;
-      overflow-x: hidden;
-      overflow-y: auto;
-      /* Scrollable contents if viewport is shorter than content. */
-    }
-
-    .sidebar .nav-link {
-      font-weight: 500;
-      color: #333;
-    }
-
-    .sidebar .nav-link .feather {
-      margin-right: 4px;
-      color: #727272;
-    }
-
-    .sidebar .nav-link.active {
-      color: #007bff;
-    }
-
-    .sidebar .nav-link:hover .feather,
-    .sidebar .nav-link.active .feather {
-      color: inherit;
-    }
-
-    .sidebar-heading {
-      font-size: .75rem;
-      text-transform: uppercase;
-    }
-
-    /*Navbar*/
-    .navbar-brand {
-      padding-top: .75rem;
-      padding-bottom: .75rem;
-      font-size: 1rem;
-      background-color: rgba(0, 0, 0, .25);
-      box-shadow: inset -1px 0 0 rgba(0, 0, 0, .25);
-    }
-
-    .navbar .navbar-toggler {
-      top: .25rem;
-      right: 1rem;
-    }
-
-    .navbar .form-control {
-      padding: .75rem 1rem;
-      border-width: 0;
-      border-radius: 0;
-    }
-
-    .form-control-dark {
-      color: #fff;
-      background-color: rgba(255, 255, 255, .1);
-      border-color: rgba(255, 255, 255, .1);
-    }
-
-    .form-control-dark:focus {
-      border-color: transparent;
-      box-shadow: 0 0 0 3px rgba(255, 255, 255, .25);
-    }
-  </style>
 </head>
 
 <body>
 
-  <nav class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0 shadow">
-    <a class="navbar-brand col-md-3 col-lg-2 mr-0 px-3" href="#">Company name</a>
-    <button class="navbar-toggler position-absolute d-md-none collapsed" type="button" data-toggle="collapse"
-      data-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <input class="form-control form-control-dark w-100" type="text" placeholder="Search" aria-label="Search">
-    <ul class="navbar-nav px-3">
-      <li class="nav-item text-nowrap">
-        <a class="nav-link" href="#">Sign out</a>
-      </li>
-    </ul>
-  </nav>
+  <div id="main-header" class="fixed-top position-relative">
 
-  <div class="container-fluid">
-    <div class="row">
-      <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse">
-        <div class="position-sticky pt-3">
-          <ul class="nav flex-column">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">
-                <span data-feather="home"></span>
-                Dashboard
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">
-                <span data-feather="file"></span>
-                Orders
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">
-                <span data-feather="shopping-cart"></span>
-                Products
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">
-                <span data-feather="users"></span>
-                Customers
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">
-                <span data-feather="bar-chart-2"></span>
-                Reports
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">
-                <span data-feather="layers"></span>
-                Integrations
-              </a>
-            </li>
-          </ul>
+    <div id="header1" class="bg-dark text-light d-flex justify-content-around align-items-center navBar fs-3">
+      <div class="m-3" id="utenteBenvenuto">Benvenuto</div>
 
-          <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
-            <span>Info</span>
-            <a class="link-secondary" href="#" aria-label="Add a new report">
-              <span data-feather="plus-circle"></span>
-            </a>
-          </h6>
-          <ul class="nav flex-column mb-2">
-            <li class="nav-item">
-              <a class="nav-link" href="#">
-                <span data-feather="file-text"></span>
-                Condividi
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">
-                <span data-feather="file-text"></span>
-                Esporta
-              </a>
-            </li>
-          </ul>
-        </div>
-      </nav>
+      <p class="mb-0 lead 
+        ">TUTTO AL 50% - Articoli sempre in Saldo</p>
 
-      <main class="col-md-9 ml-sm-auto col-lg-10 px-md-4">
-        <div
-          class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
-          <h1 class="h2">Dashboard</h1>
-          <div class="btn-toolbar mb-2 mb-md-0">
-            <div class="btn-group mr-2">
-              <button type="button" class="btn btn-sm btn-outline-secondary">Condividi</button>
-              <button type="button" class="btn btn-sm btn-outline-secondary">Esporta</button>
-            </div>
+      <ul class="list-unstyled gap-3 fs-5 d-flex pe-2 mb-1">
+        <li> <i class="bi bi-instagram"></i> </li>
+        <li><i class="bi bi-facebook"></i></li>
+        <li><i class="bi bi-twitter"></i></li>
+        <li><i class="bi bi-pinterest"></i></li>
+      </ul>
+
+
+
+    </div>
+    <nav id="secondNavbar" class="navbar bg-dark navbar-expand-lg border-bottom border-body" data-bs-theme="dark">
+      <div class="container">
+        <a class="navbar-brand"><i class="bi bi-headphones fs-1"> <span class="amex-title">Ame<span
+                style="color: #ff3c00;">X</span></span></i></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Options</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#cuffieIMG"><i class="bi bi-house"></i> Home</a>
+              </li>
+              <li class="nav-item me-3">
+
+                <a href="homeCliente.html"><i class="bi bi-person-circle p-2 fs-4"></i>
+                  Cliente
+                </a>
+              </li>
+              <li class="nav-item">
+                <button type="button" class="btn btn-dark btn-outline-light" data-bs-toggle="modal"
+                  data-bs-target="#exampleModal" id="checkout"><i class="bi bi-cart"></i>
+                  Checkout</button>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link" href="#" role="button" data-bs-toggle="modal" data-bs-target="#listaDesideriModal"
+                  aria-expanded="false">
+                  <i class="bi bi-heart"></i> WishList
+                </a>
+
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  <i class="bi bi-chat-dots"></i> Info
+                </a>
+                <ul class="dropdown-menu">
+                  <!-- href #"nomeDIV" ti scorre in automatico fino ad esso -->
+                  <li><a class="dropdown-item" href="#about-us">Chi siamo</a></li>
+                  <li><a class="dropdown-item" href="https://www.youtube.com/watch?v=asbjgXELv9Y" target="_blank">Hai
+                      ancora bisogno di aiuto?</a></li>
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+                  <li><a class="dropdown-item" href="#"></a></li>
+                </ul>
+              </li>
+            </ul>
+            <form id="searchForm" class="d-flex mt-3 mt-lg-0" role="search">
+              <input id="searchInput" class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button id="searchButton" class="btn " type="button">Search</button>
+              <button id="btnLogout" type="button" class="btn btn-dark ">
+                Logout
+              </button>
+              <button id="loginProva" type="button" class="btn btn-dark " data-bs-toggle="modal"
+                data-bs-target="#exampleModal">
+                Login
+              </button>
+            </form>
+
+
           </div>
         </div>
-
-        <canvas class="my-4 w-100" id="myChart" width="900" height="380"></canvas>
-
-        
-      </main>
-    </div>
+      </div>
+    </nav>
   </div>
 
+  <div class="container-fluid py-1 d-flex">
+    <div class="row">
 
-  <script src="/docs/5.0/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-DBjhmceckmzwrnMMrjI7BvG2FmRuxQVaTfFYHgfnrdfqMhxKt445b7j3KBQLolRl"
-    crossorigin="anonymous"></script>
+      <div class="col-2 col-sm-2 me-3 d-grid-lg gap-2 mb-3 px-lg-5">
+        <div class="btn-group-vertical mt-3" role="group" aria-label="Vertical radio toggle button group">
+          <input type="radio" class="btn-check" name="vbtn-radio" id="vbtn-radio1" autocomplete="off" checked>
+          <label class="btn btn-outline-danger" for="vbtn-radio1">Home</label>
+          <input type="radio" class="btn-check" name="vbtn-radio" id="vbtn-radio2" autocomplete="off">
+          <label class="btn btn-outline-danger" for="vbtn-radio2">Gestione Prodotti</label>
+          <input type="radio" class="btn-check" name="vbtn-radio" id="vbtn-radio3" autocomplete="off">
+          <label class="btn btn-outline-danger" for="vbtn-radio3">Clienti</label>
+        </div>
+      </div>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.24.1/feather.min.js"
-    integrity="sha384-EbSscX4STvYAC/DxHse8z5gEDaNiKAIGW+EpfzYTfQrgIlHywXXrM9SUIZ0BlyfF"
-    crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"
-    integrity="sha384-i+dHPTzZw7YVZOx9lbH5l6lP74sLRtMtwN2XjVqjf3uAGAREAF4LMIUDTWEVs4LI"
-    crossorigin="anonymous"></script>
+      <div class="col-10 col-sm-9 mt-sm-3">
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+          <div class="col">
+            <div class="d-flex">
+              <div class="bg-danger bg-opacity-25 rounded">
+                <i class="fa-solid fa-user-check fs-1 py-3 px-3" aria-hidden="true"></i>
+                <div class="card-body m-2 p-1" style="max-height: 100%; max-width: 100%;">
+                  <h5 class="card-title">Gestisci Ordine</h5>
+                  <p class="card-text mb-0">
+                    <strong class="text-white fs-3">Gestione Ordini</strong>
+                  </p>
+                </div>
+                <div class="sm-card-footer mb-3">
+                  <button type="button" class="btn btn-sm btn-primary m-1" data-bs-toggle="modal" data-bs-target="#crea">Crea Ordine</button>
+                  <button type="button" class="btn btn-sm btn-primary m-1" data-bs-toggle="modal" data-bs-target="#modifica">Modifica Ordine</button>
+                  <button type="button" class="btn btn-sm btn-primary m-1" data-bs-toggle="modal" data-bs-target="#elimina">Elimina Ordine</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="d-flex">
+              <div class="bg-danger bg-opacity-25 rounded">
+                <i class="fa-solid fa-user-check fs-1 py-3 px-3" aria-hidden="true"></i>
+                <div class="card-body m-2 p-1" style="max-height: 100%; max-width: 100%;">
+                  <h5 class="card-title">Gestisci Prodotti</h5>
+                  <p class="card-text mb-0">
+                    <strong class="text-white fs-3">Gestione Prodotti</strong>
+                  </p>
+                </div>
+                <div class="sm-card-footer mb-3">
+                  <button type="button" class="btn btn-sm btn-primary m-1" data-bs-toggle="modal" data-bs-target="#crea">Aggiungi Prodotto</button>
+                  <button type="button" class="btn btn-sm btn-primary m-1" data-bs-toggle="modal" data-bs-target="#modifica">Modifica Prodotto</button>
+                  <button type="button" class="btn btn-sm btn-primary m-1" data-bs-toggle="modal" data-bs-target="#elimina">Elimina Prodotto</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="d-flex">
+              <div class="bg-danger bg-opacity-25 rounded">
+                <i class="fa-solid fa-user-check fs-1 py-3 px-3" aria-hidden="true"></i>
+                <div class="card-body m-2 p-1" style="max-height: 100%; max-width: 100%;">
+                  <h5 class="card-title">Gestisci Clienti</h5>
+                  <p class="card-text mb-0">
+                    <strong class="text-white fs-3">Gestione Clienti</strong>
+                  </p>
+                </div>
+                <div class="sm-card-footer mb-3">
+                  <button type="button" class="btn btn-sm btn-primary m-1" data-bs-toggle="modal" data-bs-target="#crea">Aggiungi cliente</button>
+                  <button type="button" class="btn btn-sm btn-primary m-1" data-bs-toggle="modal" data-bs-target="#modifica">Modifica Cliente</button>
+                  <button type="button" class="btn btn-sm btn-primary m-1" data-bs-toggle="modal" data-bs-target="#elimina">Elimina Cliente</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          
+        </div>
+
+      </div>
+    </div>
+  </div>
+<!-- TODO INIZIO PROVA -->
+<div class="d-flex justify-content-center align-items-center">
+  <form>
+    <div class="row">
+      <!-- todo PRIMA PARTE DI FORM -->
+      <div class="col-6">
+        <div class="mb-3">
+          <label for="id" class="form-label">Id</label>
+          <input type="text" class="form-control" id="idPersona" placeholder="inserisci id">
+        </div>
+        <div class="mb-3">
+          <label for="userName" class="form-label">Nome</label>
+          <input type="text" class="form-control" id="userName" placeholder="inserisci nome">
+        </div>
+        <div class="mb-3">
+          <label for="userLastName" class="form-label">Cognome</label>
+          <input type="text" class="form-control" id="userLastName" placeholder="inserisci cognome">
+        </div>
+        <div class="mb-3 form-check">
+          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+          <label class="form-check-label" for="exampleCheck1">Check me out</label>
+        </div>
+      </div>
+      
+      <!-- todo SECONDA PARTE DI FORM -->
+      <div class="col-6">
+        <div class="mb-3">
+          <label for="id" class="form-label">Indirizzo</label>
+          <input type="text" class="form-control" id="idPersona" placeholder="inserisci Indirizzo">
+        </div>
+        <div class="mb-3">
+          <label for="userName" class="form-label">Email</label>
+          <input type="text" class="form-control" id="userName" placeholder="inserisci email">
+        </div>
+        <div class="mb-3">
+          <label for="userLastName" class="form-label">Telefono</label>
+          <input type="text" class="form-control" id="userLastName" placeholder="inserisci Telefono">
+        </div>
+        <div class="mb-3 form-check">
+          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+          <label class="form-check-label" for="exampleCheck1">Check me out</label>
+        </div>
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </div>
+  </form>
+</div>
+<!-- TODO FINE PROVA -->
+
+  <!-- TODO INIZIO MODAL -->
+  <!-- Modal Crea Ordine -->
+<div class="modal fade" id="crea" tabindex="-1" aria-labelledby="creaModalLabel" aria-hidden="true">
+  <!-- Contenuto del modal per la creazione di un ordine -->
+  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        
+        <h1 class="modal-title fs-5" id="exampleModalToggleLabel">crea - aggiungi</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <!--TODO PARTE DI SELEZIONE OGGETTO-->
+        <ul class="list-group">
+          <h5>seleziona una scelta:</h5>
+          <li class="list-group-item">
+            <input class="form-check-input me-1" type="checkbox" value="" id="firstCheckboxStretched">
+            <label class="form-check-label stretched-link" for="firstCheckboxStretched">Ordine</label>
+          </li>
+          <li class="list-group-item">
+            <input class="form-check-input me-1" type="checkbox" value="" id="secondCheckboxStretched">
+            <label class="form-check-label stretched-link" for="secondCheckboxStretched">Prodotto</label>
+          </li>
+          <li class="list-group-item">
+            <input class="form-check-input me-1" type="checkbox" value="" id="thirdCheckboxStretched">
+            <label class="form-check-label stretched-link" for="thirdCheckboxStretched">Cliente</label>
+          </li>
+        </ul>
+        <!--TODO PARTE DI NAVIGAZIONE BUONA PER CONOSCENZA //! INSERITA TRA COMMENTI-->
+        <!-- <ul class="nav nav-underline active">
+          <li class="nav-item">
+            <a class="nav-link text-primary" aria-current="page" href="#">Seleziona</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-primary" href="#">Link</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-primary" href="#">Link</a>
+          </li>
+          
+        </ul> -->
+        <!--TODO FINE PARTE DI NAVIGAZIONE-->
+        <!--TODO INSERIMENTO DI UN FORM PER GESTIONE-->
+        <form>
+          <div class="mb-3">
+            <label for="id" class="form-label">Id</label>
+            <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Password</label>
+            <input type="password" class="form-control" id="exampleInputPassword1">
+          </div>
+          <div class="mb-3 form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+        <!--TODO FINE DI UN FORM PER GESTIONE-->
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-primary" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">Open second modal</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalToggleLabel2">Modal 2</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        Hide this modal and show the first with the button below.
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Back to first</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal Modifica Ordine -->
+<div class="modal fade" id="modifica" tabindex="-1" aria-labelledby="creaModalLabel" aria-hidden="true">
+  <!-- Contenuto del modal per la creazione di un ordine -->
+  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalToggleLabel">Modal 1</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        Show a second modal and hide this one with the button below.
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-primary" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">Open second modal</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalToggleLabel2">Modal 2</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        Hide this modal and show the first with the button below.
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Back to first</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal Elimina Ordine -->
+<div class="modal fade" id="elimina" tabindex="-1" aria-labelledby="creaModalLabel" aria-hidden="true">
+  <!-- Contenuto del modal per la creazione di un ordine -->
+  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalToggleLabel">Modal 1</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        Show a second modal and hide this one with the button below.
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-primary" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">Open second modal</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalToggleLabel2">Modal 2</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        Hide this modal and show the first with the button below.
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Back to first</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <!-- todo FINE MODAL -->
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
   <script src="dashboard.js"></script>
 </body>
 
