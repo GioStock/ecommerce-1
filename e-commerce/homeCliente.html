@@ -195,7 +195,52 @@
       </div>
     </div>
   </div>
-<!-- TODO INIZIO PROVA -->
+
+
+  <!-- TODO INIZIO MODAL -->
+  <!-- Modal Crea Ordine -->
+<div class="modal fade" id="crea" tabindex="-1" aria-labelledby="creaModalLabel" aria-hidden="true">
+  <!-- Contenuto del modal per la creazione di un ordine -->
+  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        
+        <h1 class="modal-title fs-5" id="exampleModalToggleLabel">crea - aggiungi</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <!--TODO PARTE DI SELEZIONE OGGETTO-->
+        <ul class="list-group">
+          <h5>seleziona una scelta:</h5>
+          <li class="list-group-item">
+            <input class="form-check-input me-1" type="checkbox" value="" id="firstCheckboxStretched">
+            <label class="form-check-label stretched-link" for="firstCheckboxStretched">Ordine</label>
+          </li>
+          <li class="list-group-item">
+            <input class="form-check-input me-1" type="checkbox" value="" id="secondCheckboxStretched">
+            <label class="form-check-label stretched-link" for="secondCheckboxStretched">Prodotto</label>
+          </li>
+          <li class="list-group-item">
+            <input class="form-check-input me-1" type="checkbox" value="" id="thirdCheckboxStretched">
+            <label class="form-check-label stretched-link" for="thirdCheckboxStretched">Cliente</label>
+          </li>
+        </ul>
+        <!--TODO PARTE DI NAVIGAZIONE BUONA PER CONOSCENZA //! INSERITA TRA COMMENTI-->
+        <!-- <ul class="nav nav-underline active">
+          <li class="nav-item">
+            <a class="nav-link text-primary" aria-current="page" href="#">Seleziona</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-primary" href="#">Link</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-primary" href="#">Link</a>
+          </li>
+          
+        </ul> -->
+        <!--TODO FINE PARTE DI NAVIGAZIONE-->
+        <!--TODO INSERIMENTO DI UN FORM PER GESTIONE-->
+        <!-- TODO INIZIO PROVA -->
 <div class="d-flex justify-content-center align-items-center">
   <form>
     <div class="row">
@@ -243,66 +288,6 @@
   </form>
 </div>
 <!-- TODO FINE PROVA -->
-
-  <!-- TODO INIZIO MODAL -->
-  <!-- Modal Crea Ordine -->
-<div class="modal fade" id="crea" tabindex="-1" aria-labelledby="creaModalLabel" aria-hidden="true">
-  <!-- Contenuto del modal per la creazione di un ordine -->
-  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-    <div class="modal-content">
-      <div class="modal-header">
-        
-        <h1 class="modal-title fs-5" id="exampleModalToggleLabel">crea - aggiungi</h1>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        <!--TODO PARTE DI SELEZIONE OGGETTO-->
-        <ul class="list-group">
-          <h5>seleziona una scelta:</h5>
-          <li class="list-group-item">
-            <input class="form-check-input me-1" type="checkbox" value="" id="firstCheckboxStretched">
-            <label class="form-check-label stretched-link" for="firstCheckboxStretched">Ordine</label>
-          </li>
-          <li class="list-group-item">
-            <input class="form-check-input me-1" type="checkbox" value="" id="secondCheckboxStretched">
-            <label class="form-check-label stretched-link" for="secondCheckboxStretched">Prodotto</label>
-          </li>
-          <li class="list-group-item">
-            <input class="form-check-input me-1" type="checkbox" value="" id="thirdCheckboxStretched">
-            <label class="form-check-label stretched-link" for="thirdCheckboxStretched">Cliente</label>
-          </li>
-        </ul>
-        <!--TODO PARTE DI NAVIGAZIONE BUONA PER CONOSCENZA //! INSERITA TRA COMMENTI-->
-        <!-- <ul class="nav nav-underline active">
-          <li class="nav-item">
-            <a class="nav-link text-primary" aria-current="page" href="#">Seleziona</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-primary" href="#">Link</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-primary" href="#">Link</a>
-          </li>
-          
-        </ul> -->
-        <!--TODO FINE PARTE DI NAVIGAZIONE-->
-        <!--TODO INSERIMENTO DI UN FORM PER GESTIONE-->
-        <form>
-          <div class="mb-3">
-            <label for="id" class="form-label">Id</label>
-            <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
-          </div>
-          <div class="mb-3">
-            <label for="exampleInputPassword1" class="form-label">Password</label>
-            <input type="password" class="form-control" id="exampleInputPassword1">
-          </div>
-          <div class="mb-3 form-check">
-            <input type="checkbox" class="form-check-input" id="exampleCheck1">
-            <label class="form-check-label" for="exampleCheck1">Check me out</label>
-          </div>
-          <button type="submit" class="btn btn-primary">Submit</button>
-        </form>
         <!--TODO FINE DI UN FORM PER GESTIONE-->
       </div>
       <div class="modal-footer">
